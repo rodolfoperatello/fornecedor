@@ -1,0 +1,30 @@
+server:
+  port: 8081
+
+spring:
+  profile: dev
+  application:
+    name: fornecedor
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc://postgresql://fornecedor_db/fornecedordb
+    username: fornecedor
+    password: fornecedorpw
+  jpa:
+      hibernate:
+        ddl-auto: none
+      show-sql: true
+      database: postgresql
+      database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+
+
+
+
+
