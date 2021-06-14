@@ -7,7 +7,7 @@ spring:
     name: fornecedor
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc://postgresql://fornecedor_db/fornecedordb
+    url: jdbc:postgresql://fornecedor_db:5432/fornecedordb
     username: fornecedor
     password: fornecedorpw
   jpa:

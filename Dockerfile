@@ -8,7 +8,7 @@ WORKDIR /application/fornecedor/
 
 COPY /build/libs/fornecedor-0.0.1-SNAPSHOT.jar fornecedor.jar
 
-EXPOSE 8081 5433
+EXPOSE 8081 5432
 
 CMD java -jar fornecedor.jar --spring.profiles.active=${PROFILE}
 
